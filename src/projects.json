@@ -1,0 +1,56 @@
+{
+	"Films 4 U": {
+		"name": "Films 4 U",
+		"description": "A website that allows users to search for their favorite films.",
+		"technologies": ["HTML", "CSS", "JavaScript", "React"],
+		"image": "https://github.com/SebZG/Films-4-U/blob/master/src/images/films-4-u-desktop.png?raw=true",
+		"URL": "https://films-4-u.vercel.app/",
+		"GitHub": "https://github.com/SebZG/Films-4-U"
+	},
+	"Weather Dashboard": {
+		"name": "Weather Dashboard",
+		"description": "A Weather Dashboard where you can view the local weather conditions of searched cities.",
+		"technologies": [
+			"HTML",
+			"CSS",
+			"jQuery",
+			"JavaScript",
+			"Bootstrap",
+			"Day.js"
+		],
+		"image": "https://github.com/SebZG/Weather-Dashboard/blob/main/images/Weather-Dashboard-desktop.png?raw=true",
+		"URL": "https://sebzg.github.io/Weather-Dashboard/",
+		"GitHub": "https://github.com/SebZG/Weather-Dashboard"
+	},
+	"Code Quiz": {
+		"name": "Code Quiz",
+		"description": "A Quiz application with a timer that stores your scores in local storage.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"image": "https://github.com/SebZG/Code-Quiz/blob/main/assets/images/Coding-Quiz-quiz.png?raw=true",
+		"URL": "https://sebzg.github.io/Code-Quiz/",
+		"GitHub": "https://github.com/SebZG/Code-Quiz"
+	},
+	"Work Day Scheduler": {
+		"name": "Work Day Scheduler",
+		"description": "A day planner powered by jQuery that allows you to enter and save events to Local Storage.",
+		"technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+		"image": "https://github.com/SebZG/Work-Day-Scheduler/blob/main/assets/images/work-day-scheduler-desktoop.png?raw=true",
+		"URL": "https://sebzg.github.io/Work-Day-Scheduler/",
+		"GitHub": "https://github.com/SebZG/Work-Day-Scheduler"
+	},
+	"Password Generator": {
+		"name": "Password Generator",
+		"description": "An application that generates a random password based on users selected criteria.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"image": "https://github.com/SebZG/Password-Generator/blob/main/images/Password-Generator-Desktop-dark-mode.png?raw=true",
+		"URL": "https://sebzg.github.io/Password-Generator/",
+		"GitHub": "https://github.com/SebZG/Password-Generator"
+	},
+	"README Generator": {
+		"name": "README Generator",
+      "description": "A command-line application for generating a professional README file.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "image": "https://github.com/SebZG/README-generator/blob/main/assets/images/README-generator-textEditor.png?raw=true",
+      "GitHub": "https://github.com/SebZG/README-generator"
+	}
+}
