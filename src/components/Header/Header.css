@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
+
+.navbar {
+   background-color: var(--BLUE);
+   font-family: 'Fira Code', monospace;
+   font-weight: 500;
+   border-bottom: 2px solid var(--WHITE);
+}
+
+.logo {
+   font-weight: 600;
+   color: var(--WHITE);
+}
+
+.active {
+   --bs-navbar-active-color: var(--WHITE);
+}
