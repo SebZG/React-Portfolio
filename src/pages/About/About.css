@@ -1,0 +1,78 @@
+/*! HERO */
+
+#hero img {
+   /* outline: 3px solid black; */
+   box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#hero .card {
+   padding: 1rem 1rem 0 1rem;
+}
+
+.css-portfolio {
+   color: var(--YELLOW);
+   text-decoration: none;
+   transition: color 0.2s ease-in-out;
+}
+
+.css-portfolio:hover {
+   color: var(--BLUE);
+}
+
+/*! TECH STACK */
+
+.tech-stack i {
+   transition: all 0.2s ease-in-out;
+   font-size: 3.5rem;
+   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.tech-stack i:hover {
+   transform: scale(1.1);
+}
+
+.tech-stack {
+   margin-top: 1rem;
+   margin-bottom: 5rem;
+}
+
+.tech-stack .fa-brands {
+   margin-top: 1.5rem;
+}
+
+.fa-html5 {
+   color: var(--RED);
+}
+
+.fa-css3-alt {
+   color: yellowgreen;
+}
+
+.fa-js {
+   color: var(--YELLOW);
+}
+
+.fa-react {
+   color: dodgerblue;
+}
+
+.fa-bootstrap {
+   color: blueviolet;
+}
+
+/*! CARD BACKGROUNDS */
+
+#hero .card,
+#info .card {
+   background-color: var(--BLACK);
+}
+
+/*! CARD BORDERS */
+
+#hero .card,
+#info .card {
+   border: 1px solid rgb(80, 80, 80);
+   /* border: 0; */
+   --bs-card-border-radius: 1rem;
+   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}

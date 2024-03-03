@@ -10,7 +10,7 @@ import './Header.css';
 const Header = () => {
 	const [activePage, setActivePage] = useState(() => {
 		const storedPage = localStorage.getItem("activePage");
-		return storedPage || "Home";
+		return storedPage || "About";
 	});
 
 	const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Header = () => {
 		setActivePage(page);
 		localStorage.setItem("activePage", page);
 
-		if (page === "Home") {
+		if (page === "About") {
 			navigate("/");
 		}
 		if (page === "Projects") {
@@ -41,10 +41,10 @@ const Header = () => {
 				<Navbar.Collapse className="justify-content-end">
 					<Nav variant='' className="">
 						<Nav.Link
-							onClick={() => handleNavigation("Home")}
-							className={activePage === "Home" ? "active" : ""}
+							onClick={() => handleNavigation("About")}
+							className={activePage === "About" ? "active" : ""}
 						>
-							Home
+							About
 						</Nav.Link>
 						<Nav.Link
 							onClick={() => handleNavigation("Projects")}
