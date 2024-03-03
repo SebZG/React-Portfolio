@@ -4,20 +4,23 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import { useNavigate } from 'react-router-dom';
 
-import './Header.css'
 import { useState } from 'react';
+import './Header.css';
 
 const Header = () => {
-	const [activePage, setActivePage] = useState("Home");
+	const [activePage, setActivePage] = useState(() => {
+		const storedPage = localStorage.getItem("activePage");
+		return storedPage || "Home";
+	});
 
 	const navigate = useNavigate();
 
 	const handleNavigation = (page) => {
 		setActivePage(page);
+		localStorage.setItem("activePage", page);
 
 		if (page === "Home") {
 			navigate("/");
-			return
 		}
 		if (page === "Projects") {
 			navigate("/projects");
@@ -36,7 +39,7 @@ const Header = () => {
 				<Navbar.Brand className='logo'>{logo}</Navbar.Brand>
 				<Navbar.Toggle />
 				<Navbar.Collapse className="justify-content-end">
-					<Nav className="">
+					<Nav variant='' className="">
 						<Nav.Link
 							onClick={() => handleNavigation("Home")}
 							className={activePage === "Home" ? "active" : ""}

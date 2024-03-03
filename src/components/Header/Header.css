@@ -15,3 +15,7 @@
 .active {
    --bs-navbar-active-color: var(--WHITE);
 }
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+   color: black;
+} */
