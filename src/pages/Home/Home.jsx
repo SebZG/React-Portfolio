@@ -44,7 +44,13 @@ const Home = () => {
                                           </a>
                                        </li>
                                     </ul>
-                                    <Link className='btn btn-primary' to="../CV - Sebastian Zapata Gutierrez.pdf" target="_blank" download>Download CV</Link>
+
+                                    <div className="text-sm-center text-lg-start">
+                                       <Link className='btn btn-primary' to="../CV - Sebastian Zapata Gutierrez.pdf" target="_blank" download>
+                                          Download CV
+                                       </Link>
+                                    </div>
+
                                  </Card.Text>
                               </blockquote>
                            </Card.Body>
