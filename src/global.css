@@ -25,59 +25,70 @@
 
 /*! GENERAL  */
 
+html,
+body,
+#root {
+   height: 100%;
+}
+
+#root {
+   display: flex;
+   flex-direction: column;
+}
+
 ::selection {
    background-color: var(--YELLOW);
    color: var(--BLACK);
- }
- 
- #work,
- #info,
- #contact {
+}
+
+#work,
+#info,
+#contact {
    scroll-margin-top: 6rem;
- }
- 
- body {
+}
+
+body {
    background-color: var(--BLACK);
- }
- 
- body,
- .nav-item a,
- .card {
+}
+
+body,
+.nav-item a,
+.card {
    color: var(--WHITE)
- }
- 
- .navbar,
- footer {
+}
+
+.navbar,
+footer {
    background-color: var(--BLUE);
- }
- 
- #hero,
- #work,
- #info,
- #contact {
+}
+
+#hero,
+#work,
+#info,
+#contact {
    margin-bottom: 6rem;
- }
- 
- #info .section-division {
+}
+
+#info .section-division {
    margin-bottom: 4rem;
- }
- 
- .section-division {
+}
+
+.section-division {
    margin-bottom: 6rem;
    padding-bottom: 2rem;
- }
- 
- .info__divider {
+}
+
+.info__divider {
    width: 35%;
    border-top-width: 4px;
    margin: 4rem 0;
- }
- 
- .hero-title__divider,
- .tech-stack__divider {
+}
+
+.hero-title__divider,
+.tech-stack__divider {
    color: rgb(80, 80, 80);
    opacity: 1;
- }
+}
 
 body {
    /* font-family: "Fira Sans", sans-serif; */
@@ -96,39 +107,39 @@ body {
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
    .tech-stack i {
-     font-size: 3rem;
-     margin: 0 .5rem;
+      font-size: 3rem;
+      margin: 0 .5rem;
    }
- 
+
    #contact i {
-     font-size: 2.75rem;
+      font-size: 2.75rem;
    }
- }
- 
- @media only screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
    .tech-stack i {
-     font-size: 3.25rem;
-     margin: 0 1rem;
+      font-size: 3.25rem;
+      margin: 0 1rem;
    }
- 
+
    #contact i {
-     font-size: 3rem;
+      font-size: 3rem;
    }
- }
- 
- @media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
    .tech-stack i {
-     font-size: 3.25rem;
-     margin: 0 1rem;
+      font-size: 3.25rem;
+      margin: 0 1rem;
    }
- 
+
    #contact i {
-     font-size: 3.25rem;
+      font-size: 3.25rem;
    }
- }
- 
- @media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
    #contact i {
-     font-size: 3.5rem;
+      font-size: 3.5rem;
    }
- }
+}

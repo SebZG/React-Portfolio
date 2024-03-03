@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './pages/About';
 import ProjectGallery from './pages/ProjectGallery';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
 				<Route path="/projects" element={<ProjectGallery />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
+			<Footer />
 		</Router>
 	)
 }
