@@ -2,9 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 
-import './About.css';
+import './Home.css';
 
 import Avatar from '../../assets/images/avatar.jpeg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
    return (
@@ -32,8 +33,18 @@ const Home = () => {
                                     love
                                     to code and build exciting Web Apps. I am currently on a Front-End Web Development Bootcamp which I
                                     will finish end of March. Feel free to look around and contact me if you have any questions.
-                                    Checkout my <a target="_blank" className="css-portfolio"
-                                       href="https://sebzg.github.io/CSS-Portfolio/">CSS Portfolio!</a>
+                                    Checkout my other portfolio projects:
+                                    <ul>
+                                       <li><a target="_blank" className="other-portfolios"
+                                          href="https://sebzg.github.io/Bootstrap-Portfolio/">Bootstrap Portfolio
+                                       </a></li>
+                                       <li>
+                                          <a target="_blank" className="other-portfolios"
+                                             href="https://sebzg.github.io/CSS-Portfolio/">CSS Portfolio
+                                          </a>
+                                       </li>
+                                    </ul>
+                                    <Link className='btn btn-primary' to="../CV - Sebastian Zapata Gutierrez.pdf" target="_blank" download>Download CV</Link>
                                  </Card.Text>
                               </blockquote>
                            </Card.Body>

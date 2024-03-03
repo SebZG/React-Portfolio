@@ -30,10 +30,13 @@ const Project = ({ project }) => {
 
          <Card.Body>
             <Card.Title className='project-title'>{project.name}</Card.Title>
+            <hr />
             <Card.Subtitle className='project-subtitle mb-2'>{project.technologies.join(" / ")}</Card.Subtitle>
+            <hr />
             <Card.Text className='project-description'>
                {project.description}
             </Card.Text>
+            <hr />
             {
                project.URL &&
                <Card.Link target='_blank' href={project.URL}>Deployed Project</Card.Link>

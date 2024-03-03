@@ -9,13 +9,13 @@
    padding: 1rem 1rem 0 1rem;
 }
 
-.css-portfolio {
+.other-portfolios {
    color: var(--YELLOW);
    text-decoration: none;
    transition: color 0.2s ease-in-out;
 }
 
-.css-portfolio:hover {
+.other-portfolios:hover {
    color: var(--BLUE);
 }
 
