@@ -33,7 +33,7 @@ const Home = () => {
                                     love
                                     to code and build exciting Web Apps. I am currently on a Front-End Web Development Bootcamp which I
                                     will finish end of March. Feel free to look around and contact me if you have any questions.
-                                    Checkout my other portfolio projects:
+                                    Checkout my other portfolios!:
                                     <ul>
                                        <li><a target="_blank" className="links"
                                           href="https://sebzg.github.io/Bootstrap-Portfolio/">Bootstrap Portfolio
