@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+import emailjs from '@emailjs/browser';
+
 import './Contact.css'
 
 const Contact = () => {
+   const form = useRef();
+   const [emailSent, setEmailSent] = useState(false);
+
+   const sent = () => {
+      return (
+         <p className='sent text-center'>Thank you! I'll get back to you soon!</p>
+      )
+   }
+
    const [formData, setFormData] = useState({
-      name: '',
-      phone: '',
-      email: '',
+      user_name: '',
+      user_email: '',
       message: ''
    });
 
@@ -27,47 +37,49 @@ const Contact = () => {
    const handleSubmit = (e) => {
       e.preventDefault();
 
-      console.log('formData', formData);
+      console.log(e.target);
 
-      setFormData({
-         name: "",
-         email: "",
-         phone: "",
-         message: ""
-      });
+      emailjs
+         .sendForm('service_jauc33p', 'template_24nqni4', form.current, {
+            publicKey: '5tawsU2YEJbGtQgJ2',
+         })
+         .then(
+            () => {
+               console.log('Sent!');
+               setEmailSent(true);
+               setFormData({
+                  user_name: '',
+                  user_email: '',
+                  message: ''
+               });
+            },
+            (error) => {
+               console.error('FAILED...', error.text);
+            },
+         );
    };
 
    return (
       <Container id="contact">
 
-         <Form className='my-5' onSubmit={handleSubmit}>
+         <Form ref={form} className='my-5' onSubmit={handleSubmit}>
             <Form.Group className="mb-4" >
                <Form.Label>Name</Form.Label>
                <Form.Control
-                  value={formData.name}
-                  name='name'
+                  value={formData.user_name}
+                  name='user_name'
                   type="text"
                   placeholder="Foo Bar"
                   onChange={handleInputChange}
                />
             </Form.Group>
             <Form.Group className="mb-4" >
-               <Form.Label>Email address</Form.Label>
+               <Form.Label>Email</Form.Label>
                <Form.Control
-                  value={formData.email}
-                  name='email'
+                  value={formData.user_email}
+                  name='user_email'
                   type="email"
                   placeholder="foo@bar.com"
-                  onChange={handleInputChange}
-               />
-            </Form.Group>
-            <Form.Group className="mb-4" >
-               <Form.Label>Phone Number</Form.Label>
-               <Form.Control
-                  value={formData.phone}
-                  name='phone'
-                  type="tel"
-                  placeholder="+44 123 456 789"
                   onChange={handleInputChange}
                />
             </Form.Group>
@@ -80,10 +92,12 @@ const Contact = () => {
                   onChange={handleInputChange}
                />
             </Form.Group>
-            <Button type='submit' variant='outline' className='btn-primary w-100'>Send</Button>
+            <Button type='submit' variant='outline' value="Send" className='btn-primary w-100'>Send</Button>
          </Form>
 
-         <Row className="justify-content-center">
+         {emailSent && sent()}
+
+         <Row className="justify-content-center mt-5">
 
             <div className="col-lg-9 d-flex justify-content-evenly align-items-center">
                <a target="_blank" className="" href="mailto:sebastian.zapata.g@gmail.com" alt="My Email">
@@ -99,7 +113,7 @@ const Contact = () => {
 
          </Row>
 
-      </Container>
+      </Container >
    )
 }
 export default Contact;
