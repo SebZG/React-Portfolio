@@ -3,24 +3,25 @@ import { useEffect, useState } from 'react';
 import './Project.css';
 
 import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
+// import Placeholder from 'react-bootstrap/Placeholder';
+
 
 const Project = ({ project }) => {
-   const [isLoading, setIsLoading] = useState(true);
+   // const [isLoading, setIsLoading] = useState(true);
 
-   useEffect(() => {
-      setTimeout(() => {
-         setIsLoading(false);
-      }, 2000);
-   }, [])
+   // useEffect(() => {
+   //    setTimeout(() => {
+   //       setIsLoading(false);
+   //    }, 2000);
+   // }, [])
 
-   const ImageSkeleton = () => {
-      return (
-         <Placeholder as="p" animation="glow" style={{ height: '100%' }}>
-            <Placeholder xs={12} style={{ height: '16rem' }} />
-         </Placeholder>
-      );
-   }
+   // const ImageSkeleton = () => {
+   //    return (
+   //       <Placeholder as="p" animation="glow" style={{ height: '100%' }}>
+   //          <Placeholder xs={12} style={{ height: '16rem' }} />
+   //       </Placeholder>
+   //    );
+   // }
 
    return (
       <Card className='project-card' style={{ width: '26rem' }}>
