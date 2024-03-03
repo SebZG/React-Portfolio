@@ -15,7 +15,7 @@ const Contact = () => {
 
    const sent = () => {
       return (
-         <p className='sent text-center'>Thank you! I'll get back to you soon!</p>
+         <p className='sent'>Thank you! I'll get back to you soon!</p>
       )
    }
 
