@@ -40,9 +40,9 @@ const Project = ({ project }) => {
             <hr />
             {
                project.URL &&
-               <Card.Link target='_blank' href={project.URL}>Deployed Project</Card.Link>
+               <Card.Link className='links' target='_blank' href={project.URL}>Deployed Project</Card.Link>
             }
-            <Card.Link target='_blank' href={project.GitHub}>GitHub</Card.Link>
+            <Card.Link className='links' target='_blank' href={project.GitHub}>GitHub</Card.Link>
          </Card.Body>
       </Card>
    )

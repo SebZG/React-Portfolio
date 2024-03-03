@@ -62,6 +62,16 @@ footer {
    background-color: var(--BLUE);
 }
 
+.links {
+   color: var(--YELLOW);
+   text-decoration: none;
+   transition: color 0.2s ease-in-out;
+}
+
+.links:hover {
+   color: var(--BLUE);
+}
+
 #hero,
 #work,
 #info,

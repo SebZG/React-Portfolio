@@ -35,11 +35,11 @@ const Home = () => {
                                     will finish end of March. Feel free to look around and contact me if you have any questions.
                                     Checkout my other portfolio projects:
                                     <ul>
-                                       <li><a target="_blank" className="other-portfolios"
+                                       <li><a target="_blank" className="links"
                                           href="https://sebzg.github.io/Bootstrap-Portfolio/">Bootstrap Portfolio
                                        </a></li>
                                        <li>
-                                          <a target="_blank" className="other-portfolios"
+                                          <a target="_blank" className="links"
                                              href="https://sebzg.github.io/CSS-Portfolio/">CSS Portfolio
                                           </a>
                                        </li>
