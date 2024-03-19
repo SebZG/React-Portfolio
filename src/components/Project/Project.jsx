@@ -40,7 +40,10 @@ const Project = ({ project }) => {
             <hr />
             {
                project.URL &&
-               <Card.Link className='links' target='_blank' href={project.URL}>Deployed Project</Card.Link>
+               <div className='d-inline-flex'>
+                  <Card.Link className='links' target='_blank' href={project.URL}>Project</Card.Link>
+                  <p className='mx-2'>//</p>
+               </div>
             }
             <Card.Link className='links' target='_blank' href={project.GitHub}>GitHub</Card.Link>
          </Card.Body>
