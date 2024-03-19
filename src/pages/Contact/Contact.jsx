@@ -12,20 +12,20 @@ import './Contact.css'
 const Contact = () => {
    const form = useRef();
    const [emailSent, setEmailSent] = useState(false);
-
-   const sent = () => {
-      return (
-         <p className='sent'>Thank you! I'll get back to you soon!</p>
-      )
-   }
-
+   const [error, setError] = useState(false);
    const [formData, setFormData] = useState({
       user_name: '',
       user_email: '',
       message: ''
    });
 
+   const resetError = () => {
+      setError(false);
+   }
+
    const handleInputChange = (e) => {
+      resetError();
+
       const { name, value } = e.target;
 
       setFormData({
@@ -37,7 +37,10 @@ const Contact = () => {
    const handleSubmit = (e) => {
       e.preventDefault();
 
-      console.log(e.target);
+      if (!formData.user_name || !formData.user_email || !formData.message) {
+         setError(true);
+         return;
+      }
 
       emailjs
          .sendForm('service_jauc33p', 'template_24nqni4', form.current, {
@@ -95,7 +98,8 @@ const Contact = () => {
             <Button type='submit' variant='outline' value="Send" className='btn-primary w-100'>Send</Button>
          </Form>
 
-         {emailSent && sent()}
+         {error && <p className='error'>Please fill out all fields!</p>}
+         {emailSent && <p className='sent'>Thank you! I'll get back to you soon!</p>}
 
          <Row className="justify-content-center mt-5">
 
