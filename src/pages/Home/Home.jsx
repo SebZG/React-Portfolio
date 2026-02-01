@@ -29,11 +29,12 @@ const Home = () => {
                               <hr className="hero-title__divider" />
                               <blockquote className="blockquote mb-0">
                                  <Card.Text>
-                                    Welcome! I am an aspiring Web Developer eager to learn and improve everyday. I
-                                    love
-                                    to code and build exciting Web Apps. I am currently on a Front-End Web Development Bootcamp which I
-                                    will finish end of March. Feel free to look around and contact me if you have any questions.
-                                    Checkout my other portfolios!:
+                                  Welcome! I am a Frontend Web Developer eager to learn and improve everyday.
+                                  <br />
+                                  I have completed a Front-End Web Development Bootcamp
+                                  and  I am continuinsly learning and improving. 
+                                  Feel free to check out my <Link to="/projects" className="links">projects</Link> and <Link to="/contact" className="links">contact</Link> me if you have any questions.
+                                              {/* Checkout my other portfolios!:
                                     <ul>
                                        <li><a target="_blank" className="links"
                                           href="https://sebzg.github.io/Bootstrap-Portfolio/">Bootstrap Portfolio
@@ -43,13 +44,13 @@ const Home = () => {
                                              href="https://sebzg.github.io/CSS-Portfolio/">CSS Portfolio
                                           </a>
                                        </li>
-                                    </ul>
+                                    </ul>*/}
 
-                                    <div className="text-sm-center text-lg-start">
+                                    {/* <div className="text-sm-center text-lg-start">
                                        <Link className='btn btn-primary' to="../CV - Sebastian Zapata Gutierrez.pdf" target="_blank" download>
                                           Download CV
                                        </Link>
-                                    </div>
+                                    </div>*/}
 
                                  </Card.Text>
                               </blockquote>
